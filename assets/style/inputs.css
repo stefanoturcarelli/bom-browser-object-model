@@ -1,0 +1,164 @@
+:root {
+  --app-red: #ff007f;
+  --app-red-hover: #ad0b5c;
+  --app-blue: #007fff;
+  --app-blue-hover: #175ea5;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Form                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.form {
+  margin-top: 60px;
+  width: 600px;
+  font-size: 0;
+}
+
+.form p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+main h2 {
+  font-size: 24px;
+}
+
+input[type='text'] {
+  margin-top: 20px;
+  width: 330px;
+  height: 48px;
+  padding: 0 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 26px 30px -10px,
+    rgba(0, 0, 0, 0.2) 0px 16px 10px -10px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+}
+
+form input + input {
+  margin-top: 15px;
+}
+
+input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+input[type='button'] {
+  margin-left: 15px;
+  width: 120px;
+  height: 46px;
+  text-align: center;
+  background-color: var(--app-blue);
+  border: 1px solid var(--app-blue);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 26px 30px -10px,
+    rgba(0, 0, 0, 0.2) 0px 16px 10px -10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: all 0.25s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type='button']#replace {
+  background-color: var(--app-red);
+  border: 1px solid var(--app-red);
+}
+
+input[type='button']:hover {
+  background-color: var(--app-blue-hover);
+}
+
+input[type='button']#replace:hover {
+  background-color: var(--app-red-hover);
+}
+
+.buttons {
+  text-align: right;
+}
+
+.result {
+  margin-top: 15px;
+  padding: 0 15px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+#result-one,
+#result-two {
+  margin-top: 0;
+  line-height: 50px;
+}
+
+#clipboard {
+  width: 400px;
+  text-align: right;
+}
+
+#clipboard input[type='text'] {
+  width: 100%;
+}
+
+#clipboard input[type='button'] {
+  margin: 20px 0 0 0;
+  width: 180px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Dark mode                                            */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+body.dark {
+  background-color: #202127;
+}
+
+body.dark .container main section h2,
+body.dark .container main section .result p {
+  color: #fff;
+}
+
+body.dark .container main section input[type='text'] {
+  color: #fff;
+}
+
+body.dark .container main section .result {
+  background-color: #33343d;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Change button                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#change-style {
+  position: fixed;
+  bottom: 40px;
+  right: 45px;
+  width: 160px;
+  height: 48px;
+  background-color: #039be5;
+  border-radius: 50px;
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+#change-style:hover {
+  background-color: #038ed2;
+}
